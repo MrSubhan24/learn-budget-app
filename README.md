@@ -1,6 +1,7 @@
 Made a simple budget tracker app using hooks such as useState, useEffect, useContext and useReduce. Data is storred in localStorage.
 Learned how to work with Context and Reducer.
-#Live: https://budgetappnikola93.netlify.app/
+
+# Live: https://budgetappnikola93.netlify.app/
 
 # Getting Started with Create React App
 
