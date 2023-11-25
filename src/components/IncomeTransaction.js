@@ -7,7 +7,7 @@ const IncomeTransaction = ({ incTr }) => {
   return (
     <li className="plus">
       {incTr.text}
-      <span>+${incTr.amount.toFixed(2)}</span>
+      <span>+Rp{new Intl.NumberFormat('id-ID').format(incTr.amount)}</span>
       <button
         onClick={() => deleteTransaction(incTr.id)}
         className="delete-btn"

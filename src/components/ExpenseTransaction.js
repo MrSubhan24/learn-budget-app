@@ -7,7 +7,8 @@ const ExpenseTransaction = ({ expTr }) => {
   return (
     <li className="minus">
       {expTr.text}
-      <span>-${expTr.amount.toFixed(2)}</span>
+      <span>-Rp{new Intl.NumberFormat('id-ID').format(expTr.amount)}</span>
+
       <button
         onClick={() => deleteTransaction(expTr.id)}
         className="delete-btn"

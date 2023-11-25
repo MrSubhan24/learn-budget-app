@@ -46,7 +46,7 @@ const AddTransaction = () => {
 
   return (
     <div>
-      <h3>Add new transaction</h3>
+      <h3>data transaksi</h3>
       <hr></hr>
       <form onSubmit={formSubmited}>
         <div className="form-control">
@@ -81,7 +81,7 @@ const AddTransaction = () => {
           style={{ background: type === "plus" ? "#5a9b67" : "#cf5856" }}
           className="btn"
         >
-          Add transaction
+          tambahkan transaksi
         </button>
       </form>
     </div>

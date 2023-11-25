@@ -47,18 +47,19 @@ const Header = () => {
 
   return (
     <div>
-      <h2>Available budget in {date}</h2>
+      <h2>Anggaran Bulan {date}</h2>
       <div>
-        <h1>{incomeTotal >= expenseTotal ? `+$${overallTotal.toFixed(2)}` : `-$${Math.abs(overallTotal.toFixed(2))}`}</h1>
+      <h1>{incomeTotal >= expenseTotal ? `+Rp${new Intl.NumberFormat('id-ID').format(overallTotal)}` : `-Rp${new Intl.NumberFormat('id-ID').format(Math.abs(overallTotal))}`}</h1>
+
       </div>
       <div className="inc-exp-container">
         <div>
-          <h4>Income</h4>
-          <p className="money plus">+${incomeTotal.toFixed(2)}</p>
+          <h4>Pemasukan</h4>
+          <p className="money plus">+Rp{incomeTotal}</p>
         </div>
         <div>
-          <h4>Expense</h4>
-          <p className="money minus">-${expenseTotal.toFixed(2)}</p>
+          <h4>Pemasukan</h4>
+          <p className="money minus">-Rp.{expenseTotal}</p>
           <span className="percentage-span">{percentage > 0 ? `%${percentage}` : "%"}</span>
         </div>
       </div>

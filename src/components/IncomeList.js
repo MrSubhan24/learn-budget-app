@@ -7,7 +7,7 @@ const IncomeList = () => {
 
   return (
     <>
-      <h3>INCOME</h3>
+      <h3>Pemasukan</h3>
       <ul className="list">
         {incomeTransactions.map((incTr) => (
           <IncomeTransaction key={incTr.id} incTr={incTr} />
